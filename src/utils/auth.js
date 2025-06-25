@@ -11,7 +11,7 @@ const verifyPassword = async (password, hashedPassword) => {
     return isMatch;
 }
 
-exports = {
+export {
     hashPasswords,
     verifyPassword
 }
