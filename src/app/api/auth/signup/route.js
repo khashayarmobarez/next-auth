@@ -30,5 +30,5 @@ export async function POST(request) {
     });
 
     console.log("New user created:", newUser);
-    return new Response(JSON.stringify({ message: 'User created successfully', user: newUser }), { status: 201 });
+    return new Response(JSON.stringify({status: 'success' ,message: 'User created successfully', user: newUser }), { status: 201 });
 }
