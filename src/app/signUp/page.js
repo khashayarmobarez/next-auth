@@ -1,5 +1,6 @@
 
-import { useRouter } from 'next/router';
+'use client'
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 
 function Register() {
@@ -22,6 +23,7 @@ function Register() {
         });
 
         const data = await res.json();
+        console.log(data);
         if(data.status === 'success') {
             router.push('/login');
         }
